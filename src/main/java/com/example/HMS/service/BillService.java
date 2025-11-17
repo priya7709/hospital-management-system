@@ -12,6 +12,7 @@ import java.util.Optional;
 public class BillService {
     @Autowired
     BillDao billDao;
+
     public List<Bill> getAllBills() {
         return billDao.findAll();
     }

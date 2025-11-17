@@ -7,9 +7,4 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface PatientDao extends JpaRepository<Patient, Long> {
 
-//    Patient findById(Long id);
-
-//    @Query(value = "SELECT * from patient p where p.id = :id", nativeQuery = true)
-//    Patient findPatientById(@Param("id") Long id);
-
 }

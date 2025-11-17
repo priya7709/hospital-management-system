@@ -12,6 +12,7 @@ import java.util.Optional;
 public class DoctorService {
     @Autowired
     DoctorDao doctorDao;
+
     public List<Doctor> getAllDoctorDetails() {
        return doctorDao.findAll();
     }
