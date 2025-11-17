@@ -8,7 +8,6 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -20,9 +19,6 @@ public class PatientService {
     public Page<Patient> getAllPatients(int page, int size) {
         Pageable pageable = PageRequest.of(page, size);
         return patientDao.findAll(pageable);
-        //List<Patient> allPatients = patientDao.findAll();
-       // System.out.println("All Details of Patient" + allPatients);
-       // return allPatients;
     }
 
     public String addpatient(Patient patient) {

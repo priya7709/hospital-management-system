@@ -7,9 +7,9 @@ public class Appointment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-   // private Long patientId;
-   // private Long doctorId;
+
     private String date;
+
     @ManyToOne
     @JoinColumn(name = "patientId")
     private Patient patient;
@@ -41,7 +41,6 @@ public class Appointment {
     public Appointment(Patient patient) {
         this.patient = patient;
     }
-
 
     public Appointment(){}
 

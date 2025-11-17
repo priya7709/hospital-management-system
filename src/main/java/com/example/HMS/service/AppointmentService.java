@@ -12,6 +12,7 @@ import java.util.Optional;
 public class AppointmentService {
     @Autowired
     AppointmentDao appointmentDao;
+
     public List<Appointment> getAllAppointmentDetails() {
         return appointmentDao.findAll();
     }

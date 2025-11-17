@@ -7,8 +7,11 @@ public class Bill {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private double amount;
+
     private String status;
+
     @ManyToOne
     @JoinColumn(name="patientId")
     private Patient patient;
